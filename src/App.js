@@ -17,7 +17,7 @@ const App = () => (
               <h1>{card.name}</h1>
               <img src={card.image}></img>
               <p>Price: $
-                <a href={`https://mavin.io/search?q=${card.query}`} target='_blank'>
+                <a href={`https://mavin.io/search?q=${card.query}`} target='_blank' rel="noreferrer">
                   { card.price }
                 </a>
               </p>
