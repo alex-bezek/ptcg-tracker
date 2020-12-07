@@ -9,6 +9,19 @@ const lookupPrice = async (mon) => {
   if (isNaN(parseInt(mon.number))) {
     query = `${mon.lookupName} ${mon.number}`;
   } else {
+    // Makes for inconsistent results. Perhaps get all 3 and take the lowest
+    // const bufferedNumber = ((number) => {
+    //   switch (number.length) {
+    //     case 3:
+    //       return number;
+    //     case 2:
+    //       return "0" + number;
+    //     case 1:
+    //       return "00" + number;
+    //     defualt:
+    //     console.log(`Got a weird number length of ${number.length} for ${mon}`)
+    //   }
+    // })(mon.number);
     query = `${mon.lookupName} ${mon.number}/${mon.set.totalCards}`;
   }
 

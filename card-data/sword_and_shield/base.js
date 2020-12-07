@@ -8,6 +8,10 @@ const cards = [
     number: '116',
   },
   {
+    lookupName: 'Regirock V',
+    number: '104',
+  },
+  {
     lookupName: 'Zacian V',
     number: '138',
   },
@@ -28,12 +32,20 @@ const cards = [
     number: '110',
   },
   {
+    lookupName: 'Sandaconda Holo',
+    number: '110',
+  },
+  {
     lookupName: 'Galarian Perrserker Holo',
     number: '128',
   },
   {
     lookupName: 'Rhyperior Holo',
     number: '99',
+  },
+  {
+    lookupName: 'Frosmoth Holo',
+    number: '64',
   },
   {
     lookupName: 'Frosmoth Holo',
@@ -58,6 +70,10 @@ const cards = [
   {
     lookupName: "Rillaboom Reverse Holo",
     number: '15',
+  },
+  {
+    lookupName: 'Centiskorch Reverse Holo',
+    number: '39',
   },
 ]
 

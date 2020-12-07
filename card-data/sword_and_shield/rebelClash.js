@@ -4,6 +4,10 @@ const cards = [
     number: '71',
   },
   {
+    lookupName: 'Eldegoss V',
+    number: '19',
+  },
+  {
     lookupName: 'Gyarados Holo',
     number: '40',
   },
