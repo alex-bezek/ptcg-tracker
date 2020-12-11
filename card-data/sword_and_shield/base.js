@@ -4,8 +4,16 @@ const cards = [
     number: '50',
   },
   {
+    lookupName: 'Snorlax Vmax',
+    number: '142',
+  },
+  {
     lookupName: 'Stonjourner Vmax',
     number: '116',
+  },
+  {
+    lookupName: 'Marnie Full art',
+    number: '200',
   },
   {
     lookupName: 'Regirock V',
@@ -26,6 +34,14 @@ const cards = [
   {
     lookupName: 'Cramorant V',
     number: '155',
+  },
+  {
+    lookupName: 'Lapras V',
+    number: '49',
+  },
+  {
+    lookupName: 'Sableye V',
+    number: '120',
   },
   {
     lookupName: 'Sandaconda Holo',
@@ -74,6 +90,10 @@ const cards = [
   {
     lookupName: 'Centiskorch Reverse Holo',
     number: '39',
+  },
+  {
+    lookupName: 'Boltund Holo',
+    number: '75',
   },
 ]
 

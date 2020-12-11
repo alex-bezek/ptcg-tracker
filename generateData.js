@@ -40,19 +40,26 @@ const main = async () => {
   const data = []
   for (let i = 0; i < cards.length; i++) {
     const c = cards[i];
-    const cardData = await axios.get(`https://api.pokemontcg.io/v1/cards/${c.set.code}-${c.number}`);
-    const { price, query } = await lookupPrice(c);
-    data.push({
-      id: cardData.data.card.id,
-      name: cardData.data.card.name,
-      image: cardData.data.card.imageUrlHiRes,
-      rarity: cardData.data.card.rarity,
-      number: cardData.data.card.number,
-      series: c.set.series,
-      set: c.set.name,
-      price,
-      query,
-    });
+    const url = `https://api.pokemontcg.io/v1/cards/${c.set.code}-${c.number}`;
+    try {
+
+      const cardData = await axios.get(url);
+      const { price, query } = await lookupPrice(c);
+      data.push({
+        id: cardData.data.card.id,
+        name: cardData.data.card.name,
+        image: cardData.data.card.imageUrlHiRes,
+        rarity: cardData.data.card.rarity,
+        number: cardData.data.card.number,
+        series: c.set.series,
+        set: c.set.name,
+        price,
+        query,
+      });
+    } catch(e) {
+      console.log(`Got error ${e} when calling url ${url}`)
+    }
+
   }
   const fileData = JSON.stringify(data);
 

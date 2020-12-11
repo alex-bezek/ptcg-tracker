@@ -15,6 +15,14 @@ const cards = [
     lookupName: 'Toxtricity V promo',
     number: 'SWSH017',
   },
+  {
+    lookupName: 'Orbeetle V promo',
+    number: 'SWSH078',
+  },
+  {
+    lookupName: 'Pikachu V promo',
+    number: 'SWSH063',
+  },
 ]
 
 module.exports = cards;
