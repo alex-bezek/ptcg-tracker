@@ -4,6 +4,9 @@ const rebelClash = require('./rebelClash');
 const darknessAblaze = require('./darknessAblaze');
 const championsPath = require('./championsPath');
 const vivdVoltage = require('./vividVoltage');
+const shiningFates = require('./shiningFates');
+const shinyVault = require('./shinyVault');
+const battleStyles = require('./battleStyles');
 
 const SETS = {
   PROMO: {
@@ -42,6 +45,24 @@ const SETS = {
     name: "Vivid Voltage",
     series: "Sword & Shield",
   },
+  SHINING_FATES: {
+    code: 'swsh45',
+    totalCards: 72,
+    name: "Shining Fates",
+    series: "Sword & Shield",
+  },
+  SHINY_VAULT: {
+    code: 'swsh45sv',
+    totalCards: 122,
+    name: "Shiny Vault",
+    series: "Sword & Shield",
+  },
+  BATTLE_STYLES: {
+    code: 'swsh5',
+    totalCards: 163,
+    name: "Battle Styles",
+    series: "Sword & Shield",
+  },
 }
 const cards = [
   ...promo.map(card => ({ ...card, set: SETS.PROMO, })),
@@ -50,6 +71,9 @@ const cards = [
   ...darknessAblaze.map(card => ({ ...card, set: SETS.DARKNESS_ABLAZE, })),
   ...championsPath.map(card => ({ ...card, set: SETS.CHAMPIONS_PATH, })),
   ...vivdVoltage.map(card => ({ ...card, set: SETS.VIVID_VOLTAGE, })),
+  ...shinyVault.map(card => ({ ...card, set: SETS.SHINY_VAULT, })),
+  ...shiningFates.map(card => ({ ...card, set: SETS.SHINING_FATES, })),
+  ...battleStyles.map(card => ({ ...card, set: SETS.BATTLE_STYLES, })),
 ];
 
 module.exports = cards;

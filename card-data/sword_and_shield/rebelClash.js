@@ -1,31 +1,46 @@
-const cards = [
+const cards = [  {
+    lookupName: 'Scoop Up Net',
+    number: '207',
+  },
+  {
+    lookupName: 'Copperajah Vmax',
+    number: '137',
+  },
   {
     lookupName: 'Toxtricity Vmax',
     number: '71',
-  },
-  {
-    lookupName: 'Eldegoss V',
-    number: '19',
   },
   {
     lookupName: 'Gyarados Holo',
     number: '40',
   },
   {
-    lookupName: 'Appletun Holo',
-    number: '23',
+    lookupName: 'Malamar V Full Art',
+    number: '186',
   },
   {
-    lookupName: "Boss's Orders Reverse Holo",
-    number: '154',
+    lookupName: 'Toxtricity V Full Art',
+    number: '182',
   },
   {
-    lookupName: 'Barraskewda Reverse Holo',
-    number: '53',
+    lookupName: 'Dragapult Vmax rainbow',
+    number: '197',
   },
   {
-    lookupName: 'Galarian Weezing Reverse Holo',
-    number: '113',
+    lookupName: 'Dragapult Vmax',
+    number: '93',
+  },
+  {
+    lookupName: 'Rainbow Sonia',
+    number: '203',
+  },
+  {
+    lookupName: 'Cinderace Vmax',
+    number: '36',
+  },
+  {
+    lookupName: 'Oleana Full art',
+    number: '191',
   },
 ];
 

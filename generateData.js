@@ -1,8 +1,17 @@
 // Database as a file of my cards
-
+const axiosRetry = require('axios-retry');
 const axios = require('axios');
 const fs = require('fs')
 const cards = require('./card-data/index')
+
+axiosRetry(axios, {
+  retries: 3,
+  retryDelay: axiosRetry.exponentialDelay,
+});
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 const lookupPrice = async (mon) => {
   let query;
@@ -25,6 +34,8 @@ const lookupPrice = async (mon) => {
     query = `${mon.lookupName} ${mon.number}/${mon.set.totalCards}`;
   }
 
+
+
   const resp = await axios.get('https://mavin.io/search', {
     params: {
       format: 'json',
@@ -33,6 +44,7 @@ const lookupPrice = async (mon) => {
       q: query,
     }
   })
+
   return { price: parseFloat(resp.data.median), query }
 }
 
@@ -42,8 +54,13 @@ const main = async () => {
     const c = cards[i];
     const url = `https://api.pokemontcg.io/v1/cards/${c.set.code}-${c.number}`;
     try {
-
-      const cardData = await axios.get(url);
+      await sleep(5000)
+      const cardData = await axios.get(url, {
+        'axios-retry': {
+          retries: 3,
+          retryDelay: axiosRetry.exponentialDelay,
+        }
+      });
       const { price, query } = await lookupPrice(c);
       data.push({
         id: cardData.data.card.id,
@@ -56,6 +73,7 @@ const main = async () => {
         price,
         query,
       });
+      console.log(`Successfully Got url ${url}`)
     } catch(e) {
       console.log(`Got error ${e} when calling url ${url}`)
     }

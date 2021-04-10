@@ -4,6 +4,10 @@ const cards = [
     number: 'SWSH050',
   },
   {
+    lookupName: 'Charizard V promo',
+    number: 'SWSH050',
+  },
+  {
     lookupName: 'Eternatus V promo',
     number: 'SWSH064',
   },
@@ -22,6 +26,22 @@ const cards = [
   {
     lookupName: 'Pikachu V promo',
     number: 'SWSH063',
+  },
+  {
+    lookupName: 'Evee Vmax promo',
+    number: 'SWSH087',
+  },
+  {
+    lookupName: 'Meowth Vmax Promo',
+    number: 'SWSH005',
+  },
+  {
+    lookupName: 'Eternatus Vmax Promo',
+    number: 'SWSH045',
+  },
+  {
+    lookupName: 'Shiny Boltund V Promo',
+    number: 'SWSH085',
   },
 ]
 

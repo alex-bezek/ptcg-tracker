@@ -16,84 +16,16 @@ const cards = [
     number: '200',
   },
   {
-    lookupName: 'Regirock V',
-    number: '104',
+    lookupName: 'Rainbow Stonjourner Vmax',
+    number: '205',
   },
   {
-    lookupName: 'Zacian V',
-    number: '138',
+    lookupName: 'Morpeko Vmax',
+    number: '80',
   },
   {
-    lookupName: 'Zacian V',
-    number: '138',
-  },
-  {
-    lookupName: 'Cramorant V',
-    number: '155',
-  },
-  {
-    lookupName: 'Cramorant V',
-    number: '155',
-  },
-  {
-    lookupName: 'Lapras V',
-    number: '49',
-  },
-  {
-    lookupName: 'Sableye V',
-    number: '120',
-  },
-  {
-    lookupName: 'Sandaconda Holo',
-    number: '110',
-  },
-  {
-    lookupName: 'Sandaconda Holo',
-    number: '110',
-  },
-  {
-    lookupName: 'Galarian Perrserker Holo',
-    number: '128',
-  },
-  {
-    lookupName: 'Rhyperior Holo',
-    number: '99',
-  },
-  {
-    lookupName: 'Frosmoth Holo',
-    number: '64',
-  },
-  {
-    lookupName: 'Frosmoth Holo',
-    number: '64',
-  },
-  {
-    lookupName: 'Galarian Obstagoon Holo',
-    number: '119',
-  },
-  {
-    lookupName: "Professor's Research Holo",
-    number: '178',
-  },
-  {
-    lookupName: 'Thievul Reverse Holo',
-    number: '126',
-  },
-  {
-    lookupName: 'Copperajah Reverse Holo',
-    number: '137',
-  },
-  {
-    lookupName: "Rillaboom Reverse Holo",
-    number: '15',
-  },
-  {
-    lookupName: 'Centiskorch Reverse Holo',
-    number: '39',
-  },
-  {
-    lookupName: 'Boltund Holo',
-    number: '75',
+    lookupName: 'Team Yell Grunt full art',
+    number: '202',
   },
 ]
 
